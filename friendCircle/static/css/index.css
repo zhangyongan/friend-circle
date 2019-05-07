@@ -1,0 +1,147 @@
+.circle_content>ul>li{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.2rem;
+}
+.content_top{
+    font-size: 0.32rem;
+    margin-top: 0.3rem;
+}
+.content_top>a{
+    display: block;
+    width: 1.28rem;
+    height: 0.84rem;
+    text-align: center;
+}
+.content_top>a>img{
+    width: 0.84rem;
+    height: 100%;
+    border-radius: 0.1rem;
+}
+.content_top .name_text a{
+    color: #546b8a;
+}
+.content_top .name_text .f-text{
+    color: #383838;
+    margin-top: 0.1rem;
+}
+.content-imgs ul{
+    padding:0.3rem 0.6rem 0 1.28rem;
+}
+.content-imgs li{
+    width: 33.33%;
+    float: left;
+    padding: 0 0.07rem 0.07rem 0;
+}
+.content-imgs li a{
+    display:block;
+    width: 100%;
+    height: 100%;
+    margin-right: 0.1rem;
+}
+.content-imgs li a img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.content_bottom{
+    padding: 0 0 0 1.28rem;
+    margin-right: 0.25rem;
+    position: relative;
+}
+.content_bottom .space{
+    font-size: 0.22rem;
+    color: #546b8a;
+    margin-top: 0.2rem;
+}
+.content_bottom .time{
+    font-size: 0.22rem;
+    color: #383838;
+    margin: 0.4rem 0;
+}
+.content_bottom .like_commend_div{
+    font-size: 0.3rem;
+    background: #f7f7f7;
+    position: relative;
+}
+.content_bottom .like_commend_div::before{
+    content: '';
+    display:block;
+    position: absolute;
+    border: 0.2rem solid transparent;
+    border-bottom: 0.2rem solid #f7f7f7;
+    top: -0.35rem;
+    left: 0.1rem;
+}
+.content_bottom .like_people,
+.content_bottom .t-name{
+    font-size: 0.32rem;
+    color: #546b8a;
+    font-weight: bold;
+}
+.content_bottom .like_people{
+    border-bottom: 1px solid #ccc;
+    margin: 0 0.1rem;
+    padding: 0.1rem 0;
+}
+.content_bottom .commend_content{
+    margin: 0 0.1rem;
+    padding: 0.1rem 0;
+}
+.content_bottom .like_people .icon-like{
+    font-size: 0.3rem;
+}
+.content_bottom .comment_like>div:first-child{
+    width: 0.64rem;
+    height: 0.42rem;
+    background: #f8f8f8;
+    border-radius: 0.03rem;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 2.3rem;
+    font-size: 0;
+}
+.content_bottom .comment_like>div:first-child span{
+    display: inline-block;
+    width: 0.08rem;
+    height: 0.08rem;
+    border-radius: 50%;
+    background: #546b8a;
+    margin: 0.17rem 0.05rem 0 0.05rem;
+}
+.content_bottom .comment_like .layer{
+    position: absolute;
+    background: #000;
+    width: 0;
+    height: 0.8rem;
+    font-size: 0.3rem;
+    color: #fff;
+    right: 0.9rem;
+    top: 0.52rem;
+    border-radius: 0.1rem;
+    opacity: 0;
+}
+.content_bottom .comment_like .bl{
+    content: '';
+    display:block;
+    position: absolute;
+    border: 0.16rem solid transparent;
+    border-left: 0.16rem solid #000;
+    top: 0.76rem;
+    left: 6.344rem;
+    opacity: 0;
+}
+.content_bottom .comment_like .layer span{
+    display: inline-block;
+    line-height: 0.8rem;
+}
+.content_bottom .comment_like .layer i{
+    font-size: 0.4rem;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+}
+.content_bottom .comment_like .layer span:first-child{
+    margin-left: 0.6rem;
+}
+.content_bottom .comment_like .layer span:last-child{
+    margin-right: 0.6rem;
+}

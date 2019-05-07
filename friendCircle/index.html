@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0;">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动态浏览</title>
+    <link rel="stylesheet" href="static/css/reset.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1171935_eg5wd1toi2t.css">
+    <script src="static/js/jquery-1.11.3.min.js"></script>
+    <script src="static/js/resize.js"></script>
+</head>
+
+<body>
+    <div class="circle_content">
+        <ul>
+            <li>
+                <div class="content_top clearfix">
+                    <a href="javascript:void(0);" class="fl"><img src="static/images/face.jpg" alt="face" /></a>
+                    <div class="name_text fl">
+                        <a href="javascript:void(0);"><span class="f-name bold">张三</span></a>
+                        <p class="f-text">法法法法法</p>
+                    </div>
+                </div>
+                <div class="content-imgs">
+                    <ul class="clearfix">
+                        <li><a href="javascript:void(0);"><img src="static/images/face.jpg" alt=""></a></li>
+                        <li><a href="javascript:void(0);"><img src="static/images/face.jpg" alt=""></a></li>
+                        <li><a href="javascript:void(0);"><img src="static/images/face.jpg" alt=""></a></li>
+                        <li><a href="javascript:void(0);"><img src="static/images/face.jpg" alt=""></a></li>
+                        <li><a href="javascript:void(0);"><img src="static/images/face.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="content_bottom">
+                    <div class="space">惠州双越晚给个</div>
+                    <div class="time">3小时前</div>
+                    <div class="like_commend_div">
+
+                        <div class="like_people">
+                            <i class="iconfont icon-like"></i>
+                            <span>张三</span>,
+                            <span>李四</span>,
+                            <span>王五</span>,
+                        </div>
+                        <div class="commend_content">
+                            <p>
+                                <span class="t-name">张三：</span>
+                                <span>咯咯咯咯咯风格个个不让我我不要呵呵然后你太热</span>
+                            </p>
+                            <p>
+                                <span class="t-name">张三：</span>
+                                <span>咯咯咯咯咯</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="comment_like">
+                        <div class="comment_btn">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="bl"></div>
+                        <div class="layer clearfix">
+                            <span class="fl"><i class="iconfont icon-like"></i>赞</span>
+                            <span class="fr"><i class="iconfont icon-pinglun"></i>评论</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content_top clearfix">
+                    <a href="javascript:void(0);" class="fl"><img src="static/images/face.jpg" alt="face" /></a>
+                    <div class="name_text fl">
+                        <a href="javascript:void(0);"><span class="f-name bold">张三</span></a>
+                        <p class="f-text">法法法法法</p>
+                    </div>
+                </div>
+                <div class="content-imgs">
+                    <ul class="clearfix">
+                        <li><a href="javascript:void(0);"><img src="static/images/face.jpg" alt=""></a></li>
+                        <li><a href="javascript:void(0);"><img src="static/images/face.jpg" alt=""></a></li>
+                        <li><a href="javascript:void(0);"><img src="static/images/face.jpg" alt=""></a></li>
+                        <li><a href="javascript:void(0);"><img src="static/images/face.jpg" alt=""></a></li>
+                        <li><a href="javascript:void(0);"><img src="static/images/face.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="content_bottom">
+                    <div class="space">惠州双越晚给个</div>
+                    <div class="time">3小时前</div>
+                    <div class="like_commend_div">
+
+                        <div class="like_people">
+                            <i class="iconfont icon-like"></i>
+                            <span>张三</span>,
+                            <span>李四</span>,
+                            <span>王五</span>,
+                        </div>
+                        <div class="commend_content">
+                            <p>
+                                <span class="t-name">张三：</span>
+                                <span>咯咯咯咯咯风格个个不让我我不要呵呵然后你太热</span>
+                            </p>
+                            <p>
+                                <span class="t-name">张三：</span>
+                                <span>咯咯咯咯咯</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="comment_like">
+                        <div class="comment_btn">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="bl"></div>
+                        <div class="layer clearfix">
+                            <span class="fl"><i class="iconfont icon-like"></i>赞</span>
+                            <span class="fr"><i class="iconfont icon-pinglun"></i>评论</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    $(function () {
+        
+        $(document).on('click','.comment_btn', function (e) {
+            var that=e.target
+            var opacity=0,width='0';
+            if (!$(that).hasClass('active')) {
+                $(that).addClass('active')
+                opacity=1;
+                width='4rem'
+            } else{
+                $(that).removeClass('active')
+            }
+            $(that).siblings('.layer').animate({
+                "opacity": opacity,
+                "width": width
+            });
+            $(that).siblings('.bl').animate({
+                "opacity": opacity
+            });
+        });
+    })
+</script>
+
+</html>
